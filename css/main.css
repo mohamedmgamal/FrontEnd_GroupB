@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+img{
+    border-radius: 20px;
+    width: 140px;
+    height: 180px;
+}
+.firstcarousal{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.secondcarousal{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.thirdcarousal{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
