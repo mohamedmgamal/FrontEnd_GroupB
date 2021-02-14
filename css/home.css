@@ -1,0 +1,37 @@
+
+.p-md-5 {
+    background-image: url("/css/laughing-man-watching-movie_23-2147803811.jpg");
+    background-size: cover;
+    height:500px;
+}
+hr{
+    width: 45px;
+    color:cadetblue;
+    border: 5px solid;
+    border-radius: 15px;
+}
+#image1{
+    margin-top: 15px;
+    width:90%
+}
+.feature{
+    margin-top:50px;
+}
+#horez{
+    width:100%;
+    border: 3px dashed;
+    margin-top: 70px;
+}
+.price{
+    text-align: center;
+}
+
+.card{
+    margin-left: 50px;
+}
+.featurette-divider{
+    border: 5px;
+}
+footer{
+    position:static;
+}
