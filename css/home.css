@@ -1,0 +1,63 @@
+.p-md-5 {
+    background-image: url('/images/omar.jpeg');
+    background-size: cover;
+    height:500px;
+    margin-top: 20px;
+}
+.p-5 {
+    margin-top: 8px;
+    background-size: cover;
+    height: 600px;
+}
+.feature2{
+    margin-top: 50px;
+}
+.featurette{
+    margin-top: 50px; 
+}
+p.lead{
+    color:rgb(6, 36, 138);
+    font-weight: bolder;
+}
+.marketing{
+    margin-top: 50px;
+}
+.featurette-heading{
+    margin-top: 50px;
+}
+hr.featurette-divider{
+    width: 45px;
+    color:cadetblue;
+    border: 5px solid rgb(24, 23, 23);
+    border-radius: 15px;
+}
+#screeen{
+    width:100%;
+    height: 300px;
+    margin-top: 50px;
+}
+#image1{
+    margin-top: 15px;
+    width:90%
+}
+.feature{
+    margin-top:50px;
+}
+#horez{
+    width:100%;
+    border: 3px dashed;
+    margin-top: 70px;
+}
+.price{
+    text-align: center;
+}
+
+.card{
+    margin-left: 50px;
+}
+.featurette-divider{
+    border: 5px;
+}
+footer{
+    position:static;
+}
