@@ -1,12 +1,239 @@
 body{
     margin: 0;
-    padding: 0;
+    padding: 50px 0px 0px 0px; 
 }
+@media (max-width: 979px) {
+    body {
+      padding-top: 0px;
+    }
+  }
+.feather {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+  }
+  
+  /*
+    * Sidebar
+    */
+  
+  .sidebar {
+    position: absolute;
+    top: 0;
+    /* rtl:raw:
+    right: 0;
+    */
+    bottom: 0;
+    /* rtl:remove */
+    left: 0;
+    z-index: 100; /* Behind the navbar */
+    padding: 48px 0 0; /* Height of navbar */
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  }
+  .second{
+      background: url(../images/tom.jpg)no-repeat center center;
+      background-size: cover;
+      height: 635px;
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      color: white;
+  }
+  .firstdiv{
+      padding-left: 40px;
+      padding-top: 90px;
+  }
+  .firstdiv img{
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+
+  }
+  .firstdiv span{
+      margin-top: 30px;
+      border: 1px solid white;
+      text-align: center;
+      border-radius: 5px;
+  }
+  .firstdiv h5{
+      margin-bottom: 25px;
+  }
+  .firstdiv h2{
+      margin-top: 25px;
+  }
+  .firstdiv button{
+      margin-bottom: 25px;
+  }
+  @media (max-width: 767.98px) {
+    .sidebar {
+      top: 5rem;
+    }
+  }
+  ul.nav.flex-column{
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+  
+  .sidebar .nav-link {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .sidebar .nav-link .feather {
+    margin-right: 4px;
+    color: #727272;
+  }
+  
+  .sidebar .nav-link.active {
+    color: #007bff;
+  }
+  
+  .sidebar .nav-link:hover .feather,
+  .sidebar .nav-link.active .feather {
+    color: inherit;
+  }
+  
+  .sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+  }
+  
+  /*
+    * Navbar
+    */
+  
+  .navbar-brand {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 15px;
+  }
+  
+  .navbar .navbar-toggler {
+    top: .25rem;
+    right: 1rem;
+  }
+  
+  .navbar .form-control {
+    padding: .75rem 1rem;
+    border-width: 0;
+    border-radius: 0;
+  }
+  
+  .form-control-dark {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    border-color: rgba(255, 255, 255, .1);
+  }
+  
+  .form-control-dark:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+  }
+  footer{
+    position:static;
+  }
+  li.nav-item{
+    height: 100px;
+    text-align: center;
+    padding:20px;
+  }
+  h4.title-margin{
+    margin-top: 100px;
+    margin-left: 50px;
+    
+  }
+  hr.hr-margin{
+    width: 60%;
+    margin-left: 50px;
+    border:3px solid ;
+    border-radius: 10px;
+    
+  }
+  .row.general{
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  .custom-file-input.selected:lang(en)::after {
+    
+    content: "" !important;
+  }
+  .input-group{
+    margin-top: 50px;
+  }
+  .custom-file {
+    overflow: hidden;
+  }
+  
+  .custom-file-input {
+    white-space: nowrap;
+    color:#333;
+  }
+  .general.col-lg-2{
+    height:1000px;
+    margin-left: 0px;
+    
+  } 
+  .general-seperator{
+    border: 2px solid gray;
+    margin-top: 50px;
+  }
+  .button.col-md-3{
+    margin-top: 40px;
+  }
+  .Gtype{
+    width: 150px;
+    margin-right: 15px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    
+  }
+  img.Gtype:hover{
+    border: 2px solid greenyellow;
+  }
 img{
     border-radius: 20px;
     width: 140px;
     height: 180px;
 }
+.filmtype img{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width:80px;
+    height: 80px;
+    transition: all 0.6s ease-in-out;
+}
+.filmtype img:hover{
+    transform: scale(1.05);
+}
+.comedy,.action ,.drama ,.romance ,.horror ,.fantasy ,.scifi ,.thriller ,.western ,.adventure ,.animation ,.documentary{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    cursor: pointer; 
+    
+}
+/* .comedy,.action ,.drama ,.romance ,.horror ,.fantasy ,.scifi ,.thriller ,.western ,.adventure ,.animation ,.documentary img:hover{
+    
+} */
+.filmtype h6{
+    text-align: center;
+}
+
+#action ,#drama ,#romance ,#horror ,#fantasy ,#scifi ,#thriller ,#western ,#adventure ,#animation ,#documentary{
+    display: none;
+}
+
 .firstcarousal{
     margin-top: 40px;
     margin-bottom: 40px;
