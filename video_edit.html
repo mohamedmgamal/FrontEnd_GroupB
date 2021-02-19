@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/video_edit.css">
 
 </head>
-<body>
+<body onload="LoadVideo()">
 
     <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
         <div class="container-fluid">
@@ -28,11 +28,9 @@
                 <a class="nav-link" href="#">TV Shows</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="login_registration.html" tabindex="-1" aria-disabled="true">Sign Up </a>
+                  <a class="nav-link btn btn-outline-danger btn-small" onclick="signOut()" tabindex="-1" aria-disabled="true" id="btnSignOut">Sign out </a>
+
               </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.html" tabindex="-1" aria-disabled="true">Sign In </a>
-                </li>
             </ul>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -113,7 +111,7 @@
                           <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                         </svg>
                       Edit Profile
-                      </li>
+                  </a>   </li>
                   </a>
                 
               </ul>
@@ -127,38 +125,50 @@
               <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                   
               </div>
-              <div class="col-lg-8 second">
+              <div class="col-md-12 second">
                   <div class="row firstdiv">
-
-                       <!-- add your code hena ya abo elso7ab  -->
-                      
+                      <div id="videoContainer" class="col-md-12" style="border: none;background-color: black">
+                          <div id="overlay" class="col-md-auto"></div>
+                          <video id="myVideo" class="col-md-12" onclick="playPause()" autobuffer >
+                              unavailable video
+                              <source src="images/mulan.mp4" type="video/mp4">
+                          </video><br>
+                          <div id="videoPlayer" class="col-md-12 " >
+                              <img id="startPause" class="playerPtns img-fluid" src="images/ic_play_circle_filled_white_48px-512.png" onclick="playPause()">
+                              <img class="playerPtns" src="images/stop-icon-18-256.png" onclick="stopp()">
+                              <input type="range" style="position:absolute;top: 91%;left: 3%;display: none"id="input-range"min="0" max="1"step=".1">
+                              <img id="volumeBtn" class="playerPtns" src="images/volume-up-4-xxl.png" >
+                              <progress style="width: 70%" id="progressPar" max="100" value="0"></progress>
+                              <img class="playerPtns" src="images/rewind-icon-18-256.png"onclick="backwordd()">
+                              <img class="playerPtns" src="images/fast-forward-icon-18-256.png"onclick="fowroadd()">
+                              <img class="playerPtns" src="images/share.jpg"onclick="">
+                              <select id="selector"  onchange="speedChanged(this)">
+                                  <option value=".5">x.5</option>
+                                  <option selected value="1">x1</option>
+                                  <option value="1.5">x1.5</option>
+                                  <option value="2">x2</option></select>
+                              <img class="playerPtns" src="images/fullscreen_white_192x192.png" onclick="fullScreen()">
+                          </div>
+                      </div>
+                      <div class="col-md-12" style="padding-top: 1%">
+                          <h1 id="videoTitle" >Mulan 2020</h1>
+                          <p><h3>Description : </h3>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                          <a type="button" class="btn btn-danger disabled" href="edit_video.html" id="editButton">Edit</a>
+                      </div>
                   </div>
-                  
+
               </div>
 
 
+</main>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div></div></div>
     <script src="./js/fontawesome.min.js"></script>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/video_edit.js"></script>
+    <script src="js/video_edit.js"></script>
 </body>
 </html>

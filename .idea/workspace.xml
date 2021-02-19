@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2403cf1-73bd-4e15-b942-eafa4d746e54" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/edit_video.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/login_registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/login_registration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login_registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/login_registration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/video_edit.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/video_edit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/video_edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/video_edit.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/video_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/video_edit.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +34,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FrontEnd_GroupA" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -53,6 +51,7 @@
       <workItem from="1613670844183" duration="606000" />
       <workItem from="1613672031872" duration="33000" />
       <workItem from="1613759284873" duration="10166000" />
+      <workItem from="1613772371850" duration="2376000" />
     </task>
     <servers />
   </component>
