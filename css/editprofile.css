@@ -157,3 +157,6 @@ hr.hr-margin{
 img.Gtype:hover{
   border: 2px solid greenyellow;
 }
+a.nav-link:hover{
+  color: dodgerblue;
+}

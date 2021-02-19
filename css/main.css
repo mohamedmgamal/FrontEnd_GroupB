@@ -246,3 +246,6 @@ img{
     margin-top: 40px;
     margin-bottom: 40px;
 }
+a.nav-link:hover{
+  color: dodgerblue;
+}
