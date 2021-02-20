@@ -1,6 +1,6 @@
 function fillInputs(){
     if (!localStorage.getItem("admin"))
-        open("skrn.html","_self");
+        open("home.html","_self");
     video=localStorage.getItem("selectedMovie");
     video=JSON.parse(video);
     document.getElementById("videTitle").innerText="Movie Name : :"+video.title;
@@ -59,7 +59,7 @@ fetch("https://agile-wildwood-89087.herokuapp.com/http://anyservice.imassoft.com
         }
         else {
             console.log({data});
-            open("mainpage.html","_self");
+            open("main.html","_self");
         }
     })
     .catch(error => console.error('error', error));
@@ -117,7 +117,7 @@ async function editValidation() {
             }
             else {
                 console.log({data});
-                open("mainpage.html","_self");
+                open("main.html","_self");
             }
         })
         .catch(error => console.error('error', error));
@@ -139,7 +139,7 @@ async function Delete(){
                     console.log(data.error)
                 }
                 else {
-                    open("mainpage.html","_self");
+                    open("main.html","_self");
                 }
             })
             .catch(error => console.error('error', error));

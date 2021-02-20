@@ -1,6 +1,6 @@
 function reDirect(){
     if (localStorage.getItem("UserName")&&localStorage.getItem("admin"))
-        open("mainpage.html","_self")
+        open("home.html","_self")
 }
 async function signInAdmin(){
     userName=document.getElementById("AdminUser").value;
@@ -32,7 +32,7 @@ async function signInAdmin(){
                 localStorage.setItem("admin",true)
                 localStorage.setItem("UserName",userName)
                 console.log("token",data.data.token+" "+data.data.username )
-                open("mainpage.html","_self")
+                open("main.html","_self")
             }
             else if (data.error){
                 document.getElementById("errorSmall").style.display="block"
