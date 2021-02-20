@@ -249,3 +249,10 @@ img{
 a.nav-link:hover{
   color: dodgerblue;
 }
+.contain{
+  display: inline-block;
+}
+.title1{
+  margin-top: 50px;
+  color:darkred;
+}
