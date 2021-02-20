@@ -361,7 +361,7 @@ function addData(data){
     datalist.push(data);
     var randomNum=Math.floor(Math.random() * 15);
     var imagePath=imageList[randomNum]
-    html+="<div class='item' onclick='movieSelected("+data.id+")' ><img src="+imagePath+" ><h4>"+data.title+"</h4></div>"
+    html+="<div class='item col-md-2' onclick='movieSelected("+data.id+")' ><img src="+imagePath+"><h6>"+data.title+"</h6></div>"
     document.getElementById("movies_list").innerHTML=html;
 }
 function movieSelected(id){
