@@ -160,3 +160,6 @@ img.Gtype:hover{
 a.nav-link:hover{
   color: dodgerblue;
 }
+div.row.genres{
+  margin-top: 70px;
+}
