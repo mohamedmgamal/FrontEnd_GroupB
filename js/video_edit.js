@@ -101,3 +101,27 @@ function LoadVideo(){
     document.getElementById("videoTitle").innerText=video.title;
 
 }
+function signOut(){
+    localStorage.removeItem("token");
+    localStorage.removeItem("UserName");
+    localStorage.removeItem("Password");
+    localStorage.removeItem("admin");
+    var requestOptions = {
+        method: 'GET',
+        headers:  {'Content-Type': 'application/json',"token":localStorage.getItem("token")},
+        redirect: 'follow'
+    };
+    fetch("https://agile-wildwood-89087.herokuapp.com/http://anyservice.imassoft.com/41/logout/", requestOptions)
+        .then(response => response.json())
+        .then(data => {
+            if (data.error){
+                console.log(data.error)
+            }
+            else {
+                console.log({data});
+                open("home.html","_self");
+            }
+        })
+        .catch(error => console.error('error', error));
+    open("home.html","_self")
+}
