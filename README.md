@@ -1,2 +1,2 @@
-# FrontEnd_GroupB
+# Kostream-media-streaming-center
 Front end course project
